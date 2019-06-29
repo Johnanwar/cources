@@ -14,6 +14,9 @@ a{
 a:hover{
 	text-decoration:none ;
 }
+.main-color{
+	color: #00a2b1;
+}
 
 /* start section above nav bar  */
 .fixed-first-nav {
@@ -101,7 +104,8 @@ a:hover{
 	top: 0;
 	left: 0;
 	right: 0;
-    height: 75px;
+	height: 75px;
+	background-color: #333;
 }
 .nav-logo img{
 	width: 200px;
@@ -110,7 +114,11 @@ a:hover{
 
 .big-nav-home .nav-item a{
   color:#fff!important;
+  text-transform: uppercase;
 }
+.big-nav-home .nav-item a:hover{
+	color:#00a2b1!important;
+  }
 
 .social-container .btn-sc {
   position: relative;
@@ -268,7 +276,7 @@ a:hover{
 
 .carousel-item-three {
 	position: relative;
-	height: 500px;
+	height: 600px;
 	overflow: hidden;
 }
 
@@ -385,7 +393,6 @@ a:hover{
 	height: 100%;
 	display: table-cell;
 	vertical-align: middle;
-	text-align: center;
 }
 
 .center-block-wrap {
@@ -397,55 +404,170 @@ a:hover{
 
 .center-block {
 	position: absolute;
-	top: 0;
+	top: -10px;
 	width: 100%;
 	height: 100%;
 }
-
-
-
-.home-content h1 
-{
-	font-size: 48px;
-    font-weight: bold;
-    color: #fff;
-    line-height: 60px;
+.home-content p {
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 25px
 }
-
-
-.home-content button
-{
-	
+.home-content p span{
+	color: #00a2b1;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.home-content .btn{
+	color: #fff;
 	background-color: #00a2b1;
-	padding: 5px 20px;
-	font-size: 20px;
-	font-weight: 600;
-    line-height: 40px;
-	-webkit-transition-duration: 1s;
-	     -o-transition-duration: 1s;
-					transition-duration: 1s;
-					color: #fff;			
-}
- #front
-{
-	color: #00a2b1;!important
-}
-.home-content button i
-{
-	padding: 0 5px;
-}
-.home-content button:hover i
-{
- padding-right:  10px;	
- color: #fff;
+	width: 130px;
 }
 .home-content button:hover{
 	color: #00a2b1;
+	background-color: #fff;
+	width: 145px;
+}
+
+/* end home section */
+
+/* start serrvice section */
+.service-container{
 	background-color: #fff
 }
-.home-content button:hover i{
-	color:#00a2b1;
+.header span{
+  color: #00a2b1;
 }
+.header h3{
+	position: relative;
+	font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+
+.header hr {
+	width: 6%;
+	border-bottom: 1px solid #00a2b1;
+}
+.header:hover hr {
+	width: 10%;
+}
+.header h3::after{
+	position: absolute;
+	content: "O";
+    font-size: 2em;
+    opacity: .06;
+    top: -0.25em;
+    left: 0;
+    right: 0;
+	margin: auto;
+}
+.read-more a {
+    position: relative;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #00a2b1;
+    text-decoration: none;
+    text-transform: uppercase;
+	letter-spacing: .1em;
+}
+.read-more a i {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+	transition: all .35s;
+}
+.service-box:hover .read-more a i {
+	left: 100%;}
+
+.service-box p i{
+	color: #00a2b1;
+	font-size: 42px;
+}
+.service-box p {
+	color: #333;
+}
+.service-box{
+	height: 100%;
+	box-shadow: 2px 2px 3px #eee
+}
+.service-box h5{
+	text-transform: uppercase;
+}
+/* end service section */
+
+/* start about section */
+.about-container{
+	background-color: #f7f7f7
+}
+.about-container h3::after{
+	content: "A"
+}
+.bout-projects h5{
+	font-size: 50px;
+    line-height: 1.2;
+}
+/* end about section */
+
+/*start team section */
+.team-card{
+	position: relative;
+	box-shadow: 2px 2px 3px #f3f3f3,	-2px -2px 3px #f3f3f3;
+	width: 60%;
+	margin: auto;
+	background-color: #f3f3f3;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.team-card-content {
+  padding:60px 50px 10px;
+}
+.team-persons{
+	position: relative;
+}
+.team-persons i , .team-persons h5{
+	color: #00a2b1
+}
+.team-persons .leftt , .rightt{
+	position: absolute;
+	top: 58%;
+	cursor: pointer;
+}
+.team-persons .leftt{
+	left: 21%;
+}
+.team-persons .rightt{
+	right: 21%;
+}
+.team-card img{
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	position: absolute;
+	width: 30%;
+	right: 35%;
+	top: -70px;
+	height: 130px;
+}
+.card-none{
+	display: none;
+}
+.team-persons:hover img{
+  filter: saturate(0);
+  -webkit-filter: saturate(0);
+}
+
+
+
 
 
 
@@ -482,5 +604,14 @@ a:hover{
 		width: 200px;
 		float: none!important;
 		}
+	.team-card{
+		width: 85%
+	}
+	.team-persons .leftt{
+	left: 11%;
+}
+.team-persons .rightt{
+	right: 11%;
+}
 }
 
