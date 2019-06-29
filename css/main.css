@@ -720,6 +720,10 @@ a:hover{
 	.onlybig{
 		display: none;
 	}
+	.course-button{
+		width: 40%;
+	
+	}
 	
   }
 
