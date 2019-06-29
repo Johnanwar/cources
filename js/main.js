@@ -38,8 +38,8 @@ $('.team-persons i').click(function(){
 
 $(window).scroll(function(){
     if($(window).scrollTop()>5){
-    $(".navbar").addClass("big-nav-fixed"); }
-    else $(".navbar").removeClass("big-nav-fixed"); });
+    $(".big-nav").addClass("big-nav-fixed"); }
+    else $(".big-nav").removeClass("big-nav-fixed"); });
 
 // end team section
 

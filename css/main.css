@@ -129,6 +129,10 @@ a:hover{
   color:#fff!important;
   text-transform: uppercase;
 }
+.big-nav-fixed .navbar-collapse{
+	background-color: #ccc;
+	text-align: center;
+}
 
 .big-nav-fixed .nav-item a{
 	color:#333!important;social-container
@@ -692,7 +696,10 @@ a:hover{
 	background-color: #fff;
 	color: #00a2b1;
 }
-
+/* end courses section */
+.pics-container{
+	background-color: #333
+}
 
 
 
