@@ -652,7 +652,8 @@ a:hover{
 	color: #c0c1cd;
 }
 .course-card img{
-	width: 351px;
+	/* width: 351px; */
+	width: 100%;
 	height: 286px!important;
 }
 .corse-android{
@@ -697,8 +698,35 @@ a:hover{
 	color: #00a2b1;
 }
 /* end courses section */
+
+/* start pics section */
+.pics-container img{
+	opacity: .6;
+}
+.pics-container img:hover{
+	opacity: 1;
+}
 .pics-container{
 	background-color: #333
+}
+
+/* end pics section */
+
+/* start contact section */
+
+
+.contact-container h3::after{
+	position: absolute;
+	content: "G";
+    font-size: 2em;
+    opacity: .06;
+    top: -0.25em;
+    left: 0;
+    right: 0;
+	margin: auto;
+}
+.contact-doupple{
+	box-shadow: 2px 2px 3px #ccc;
 }
 
 
