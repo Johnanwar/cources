@@ -18,6 +18,20 @@ a:hover{
 	color: #00a2b1;
 }
 
+::-webkit-scrollbar{
+	background-color: #00a2b1;
+	width: 8px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #ccc;
+	border: .5px solid #333;
+	border-radius: 10px;    ;
+	-webkit-border-radius: 10px    ;
+	-moz-border-radius: 10px    ;
+	-ms-border-radius: 10px    ;
+	-o-border-radius: 10px    ;
+}
+
 /* start section above nav bar  */
 .fixed-first-nav {
 	background-color: #fff;
@@ -104,18 +118,25 @@ a:hover{
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 75px;
-	background-color: #333;
+	height: 85px;
+	background-color: #ccc;
 }
 .nav-logo img{
 	width: 200px;
 	height: 70px;
   }
-
 .big-nav-home .nav-item a{
   color:#fff!important;
   text-transform: uppercase;
 }
+
+.big-nav-fixed .nav-item a{
+	color:#333!important;social-container
+  }
+
+  .big-nav-fixed .nav-item .social-container a{
+	color: #fff !important;
+  }
 .big-nav-home .nav-item a:hover{
 	color:#00a2b1!important;
   }
@@ -561,9 +582,115 @@ a:hover{
 .card-none{
 	display: none;
 }
-.team-persons:hover img{
+.team-card:hover img{
   filter: saturate(0);
   -webkit-filter: saturate(0);
+}
+
+/* end team section */
+
+/* start course section */
+.courses-links a{
+	margin-left: 10px;
+	font-size: 18px;
+    line-height: 1;
+    color: #383749;
+}
+.courses-links a:hover{
+	color: #00a2b1
+}
+.courses-container{
+	background-color: #f7f7f7
+}
+.courses-container h5{
+	font-size: 42px;
+    font-weight: 400;	
+}
+.course-card{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.course-content h4:hover{
+ color: #00a2b1;
+}
+.course-content .course-teacher a{
+	font-style: italic;
+	margin-left: 10px;
+	color: #00a2b1;
+	font-size: 18px;
+}
+.course-content .course-date span {
+	margin-left: 10px;
+	font-size: 18px;
+}
+.course-rate .course-price {
+	font-size: 24px;
+    font-weight: 700;
+}
+.course-rate .course-price .discount{
+	margin-left: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: #c0c1cd;
+    text-decoration: line-through
+}
+.course-rate .stars i{
+	color: #f3a90b;
+}
+.course-rate .stars span{
+	font-size: 13px;
+	color: #c0c1cd;
+}
+.course-card img{
+	width: 351px;
+	height: 286px!important;
+}
+.corse-android{
+	position: relative;
+	height: 100%;
+}
+.course-card:hover{
+	box-shadow: 0 24px 38px rgba(81,107,117,.21);
+}
+.android::after{
+	position: absolute;
+	content: "OFFER";
+	top: 63px;
+    right: 16px;
+    background-color: #333;
+    color: #fff;
+    width: 58px;
+    text-align: center;
+    height: 25px;
+}
+.ios::after{
+	position: absolute;
+	content: "Free";
+	top: 63px;
+    right: 16px;
+    background-color: #333;
+    color: #fff;
+    width: 58px;
+    text-align: center;
+    height: 25px;
+}
+.course-button{
+	width: 20%;
+	margin: auto;
+	color: #fff;
+	background-color: #00a2b1;
+	height: 40px;
+	border: 1px solid #00a2b1
+}
+.course-button:hover{
+	background-color: #fff;
+	color: #00a2b1;
 }
 
 
