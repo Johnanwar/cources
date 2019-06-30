@@ -10,12 +10,20 @@
 }
 a{
 	color: #383749;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+p{
+	font-family: 'Roboto Condensed', sans-serif;
+
 }
 a:hover{
 	text-decoration:none ;
 }
 .main-color{
 	color: #00a2b1;
+}
+h5{
+	font-family: 'Merriweather', serif;
 }
 
 ::-webkit-scrollbar{
@@ -144,6 +152,9 @@ a:hover{
 
   .big-nav-fixed .nav-item .social-container a{
 	color: #fff !important;
+  }
+  .big-nav-fixed .nav-item .social-container .main-btn{
+	color: rgb(5, 5, 5) !important;
   }
 .big-nav-home .nav-item a:hover{
 	color:#00a2b1!important;
