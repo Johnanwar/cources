@@ -877,7 +877,9 @@ h5{
 	.course-button{
 		width: 40%;
 	}
-	
+	.courses-container h5 {
+		font-size: 36px;
+	}
 
 	
   }
