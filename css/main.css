@@ -882,8 +882,12 @@ h5{
       display: none
 	}
 	.nav-contact-right input{
-		width: 200px;
+		width: 80%;
 		float: none!important;
+		margin-bottom: 10px;
+		}
+	.nav-contact-right .search{
+		width: 18%;
 		}
 	.team-card{
 		width: 85%
@@ -900,6 +904,13 @@ font-size: 16px;
 .social{
 	text-align: center;
 	float: none!important;
+}
+.search-contaner , .nav-contact-right{
+	margin: 0!important
+}
+.Login , .register {
+  font-size:24px;
+  text-align: center;
 }
 
 }
