@@ -36,10 +36,10 @@ $('.team-persons i').click(function(){
 }
 });
 
-$(window).scroll(function(){
-    if($(window).scrollTop()>5){
-    $(".big-nav").addClass("big-nav-fixed"); }
-    else $(".big-nav").removeClass("big-nav-fixed"); });
+// $(window).scroll(function(){
+//     if($(window).scrollTop()>5){
+//     $(".big-nav").addClass("big-nav-fixed"); }
+//     else $(".big-nav").removeClass("big-nav-fixed"); });
 
 // end team section
 
