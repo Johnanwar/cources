@@ -53,7 +53,26 @@ $(window).scroll(function(){
 		 else ($(".sccroll-top i").fadeOut(400) )
 	
 	                                });
-		/* sccroll-top  */
+        /* sccroll-top  */
+        
+            /*Counter*/
+    $(window).scroll(function(){
+        if($(window).scrollTop()>=$("#about").offset().top-200)
+            {
+                $('.data').each(function(){
+                $(this).prop('Counter',0).animate({
+                Counter:$(this).attr("data-count")
+                },{
+                duration:5000,
+                easing: 'swing',
+                step: function(now){
+                $(this).text(Math.ceil(now))
+            }
+        })
+    })  
+            } 
+    })
+       
 
   
 });
