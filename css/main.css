@@ -883,6 +883,9 @@ h5{
 	.onlybig{
 		display: none;
 	}
+	.big-nav .navbar-nav , .big-nav-fixed .nav-item a {
+		margin-right: 0 !important;
+	}
 	
 	
 	
