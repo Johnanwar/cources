@@ -39,9 +39,67 @@ h5{
 	-ms-border-radius: 10px    ;
 	-o-border-radius: 10px    ;
 }
+.top-header-bar {
+    background: #fff;
+}
+.header-bar-email {
+    padding-left: 16px;
+    border-right: 1px solid #ebebeb;
+}
+.header-bar-text, .header-bar-email {
+    padding: 11px 26px;
+}
+.email {
+    padding: 11px 26px;
+}
+.bar-email i {
+    margin-right: 12px;
+    font-size: 20px;
+	color: #00a2b1;
+}	
+.header-bar-email a {
+	color: #383749;
+	text-decoration: none;}
 
+.header-bar-text p {
+	margin: 0;
+}
+
+.header-bar-text i , .header-bar-email i {
+    margin-right: 12px;
+    font-size: 20px;
+	color: #00a2b1;
+}
+.header-bar-search input[type="search"] {
+    width: 280px;
+    padding: 12px 26px;
+    border: 0;
+    line-height: 1;
+    background: #f3f3f3;
+	color: #383749;
+}
+.header-bar-search button[type="submit"] {
+    width: 50px;
+    height: 50px;
+    border: 0;
+    color: #fff;
+    background: #00a2b1;
+    cursor: pointer;
+	outline: none;
+}
+.header-bar-menu ul {
+    padding: 0 16px 0 32px;
+	margin: 0;
+	list-style:none;
+}
+.header-bar-menu li a {
+    position: relative;
+    display: block;
+    padding: 0 6px;
+	color: #383749;
+}
 /* start section above nav bar  */
-.fixed-first-nav {
+/* .fixed-first-nav {
 	background-color: #fff;
 	border-bottom: 1px solid #ebebeb;
 }
@@ -113,16 +171,16 @@ h5{
 
 .nav-contact-right span a{
  color: #383749;
-}
-.big-nav .navbar-toggler{
-	outline: none
-}
+} */
+
 
 /* end section above nav bar  */
 
 
 /* start section  nav bar  */
-
+.big-nav .navbar-toggler{
+	outline: none
+}
 .big-nav {
  background-color: rgba(255,255,255,.1);
  z-index: 999999999;
@@ -563,8 +621,9 @@ h5{
 /*start team section */
 .team-card{
 	position: relative;
-	box-shadow: 2px 2px 3px #f3f3f3,	-2px -2px 3px #f3f3f3;
-	width: 60%;
+	box-shadow: 2px 2px 3px #ccc,
+		-2px -2px 3px #cccc;
+	/* width: 60%; */
 	margin: auto;
 	background-color: #f3f3f3;
 	border-radius: 5px;
@@ -578,22 +637,14 @@ h5{
 }
 .team-persons{
 	position: relative;
+	overflow: hidden;
+
 }
+
 .team-persons i , .team-persons h5{
 	color: #00a2b1
 }
-.team-persons .leftt , .rightt{
-	position: absolute;
-	top: 58%;
-	cursor: pointer;
-	font-size: 24px;
-}
-.team-persons .leftt{
-	left: 21%;
-}
-.team-persons .rightt{
-	right: 21%;
-}
+
 .team-card img{
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -685,6 +736,14 @@ h5{
 }
 .course-card:hover{
 	box-shadow: 0 24px 38px rgba(81,107,117,.21);
+}
+.course-card:hover  img{
+	opacity:.6;
+	transform: scale(1.008);
+	-webkit-transform: scale(1.008);
+	-moz-transform: scale(1.008);
+	-ms-transform: scale(1.008);
+	-o-transform: scale(1.008);
 }
 .android::after{
 	position: absolute;
@@ -822,6 +881,11 @@ h5{
 	color: #00a2b1;
 }
 
+.mytextarea{	
+	max-height: 200px!important
+}
+
+
 /* end last section */
 /* start scroll top */
 .sccroll-top i
@@ -864,61 +928,44 @@ h5{
 
 @media screen and (max-width: 971px) {
 	
-
-	.nav-contact-right input{
-	width: 275px
+	.header-bar-search, .header-bar-menu {
+		width: 100%;
 	}
-	.register{
-		margin-left:5px!important;
+	.header-bar-search input[type="search"] {
+		width: calc(100% - 50px);
 	}
-	.onlybig{
-		display: none;
+	.header-bar-search button[type="submit"] {
+		width: 45px;
 	}
 	.course-button{
 		width: 40%;
 	}
 	.courses-container h5 {
-		font-size: 36px;
+		font-size: 30px;
 	}
-
+	.header-bar-menu{
+		text-align: center!important;
+		font-size: 20px;
+	}
+	.big-nav{
+		background-color: #ccc;
+	}
+	.onlybig{
+		display: none;
+	}
+	
+	
 	
   }
 
-  @media screen and (max-width: 450px) {
-	.nav-contact-lef {
-      display: none
+  @media screen and (max-width: 450px) {	
+	.copyright{
+	font-size: 16px;
 	}
-	.nav-contact-right input{
-		width: 80%;
+	.social{
+		text-align: center;
 		float: none!important;
-		margin-bottom: 10px;
-		}
-	.nav-contact-right .search{
-		width: 18%;
-		}
-	.team-card{
-		width: 85%
 	}
-	.team-persons .leftt{
-	left: 11%;
-}
-.team-persons .rightt{
-	right: 11%;
-}
-.copyright{
-font-size: 16px;
-}
-.social{
-	text-align: center;
-	float: none!important;
-}
-.search-contaner , .nav-contact-right{
-	margin: 0!important
-}
-.Login , .register {
-  font-size:24px;
-  text-align: center;
-}
 
 }
 

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/all.min.css"/>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>  
     <link rel="stylesheet" href="css/all.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css"/>
+
     <link rel="stylesheet" href="css/main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
@@ -16,20 +18,36 @@
 </head>
 <body>
     <!-- start section above nav bar -->
-    <section class="fixed-first-nav">
-        <div class="nav-contact-lef float-left mx-5  my-2">
-          <span> <i class="fas fa-envelope"></i></span> <a href="#"> info@de-tc.com </a>
-           <span class="phone"> <i class="fa fa-phone"></i> </span> <span>+202 26903117</span>
-        </div>
-        <div class="nav-contact-right float-right mx-5  ">
-          <span class="search-contaner"> <input  type="search" placeholder="what You want To LEarn ?">
-            <button class=" search mr-0"><i class="fas fa-search"></i> </button> </span> 
-             <span class="my-2 ml-5 register"> <a href=""> Register</a> / </span>
-             <span class="my-2 Login"> <a href=""> Login </a> </span>
-        </div>
-        <div class="clearfix"></div>
-    </section>
-        <!-- end section above nav bar -->
+    <div class="top-header-bar">
+      <div class="container-fluid">
+      <div class="row">
+      <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+      <div class="header-bar-email d-flex align-items-center">
+      <i class="fa fa-envelope"></i><a href="#">tuanna.design@gmail.com</a>
+      </div>
+      <div class="header-bar-text lg-flex align-items-center">
+      <p><i class="fa fa-phone"></i>001-1234-88888 </p>
+      </div>
+      </div>
+      <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
+      <div class="header-bar-search">
+      <form class="flex align-items-stretch">
+      <input type="search" placeholder="What would you like to learn?">
+      <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
+      </form>
+      </div>
+      <div class="header-bar-menu">
+      <span class="flex justify-content-center align-items-center pl-md-4  py-2 pt-md-0 ">
+      <span><a href="#">Register</a> / </span>
+      <span><a href="#">Login</a></span>
+      </span>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <!-- end section above nav bar -->
 
 
      <!-- start home section -->
@@ -261,41 +279,53 @@
               </header>
 
               <div class="team-persons mt-5 pt-5 ">
-                
-                <div class=" m-auto team-card active">
-                 <img class="img-fluid" src="./images/member-1.jpg">
-                <div class="team-card-content">
-                 <p> <i class="fas fa-quote-left"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="fas fa-quote-right"></i></p>
-                 <h5>John Carter</h5>
-                 <p>Co-founder, Developer </p>
-                </div>
+
+                  <div class="swiper-container">
+                      <div class="swiper-wrapper ">
+                        
+                        <div class="swiper-slide mb-5">
+                            <div class=" m-auto team-card ">
+                                <img class="img-fluid" src="./images/member-1.jpg">
+                               <div class="team-card-content">
+                                <p> <i class="fas fa-quote-left"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="fas fa-quote-right"></i></p>
+                                <h5>John Carter</h5>
+                                <p>Co-founder, Developer </p>
+                               </div>
+                             </div>       
+                        </div>
+                        <div class="swiper-slide mb-5">
+                          <div class=" m-auto team-card ">
+                              <img class="img-fluid" src="./images/member-2.jpg">
+                            <div class="team-card-content">
+                              <p> <i class="fas fa-quote-left"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="fas fa-quote-right"></i></p>
+                              <h5>Elizabeth Taylor</h5>
+                              <p>Designer</p>
+                            </div>
+                          </div>        
+                        </div>
+                        <div class="swiper-slide mb-5">
+                            <div class=" m-auto team-card ">
+                                <img class="img-fluid" src="./images/member-3.jpg">
+                               <div class="team-card-content">
+                                <p> <i class="fas fa-quote-left"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="fas fa-quote-right"></i></p>
+                                <h5>Jack Richer
+                                  </h5>
+                                <p>UI/UX Designer </p>
+                               </div>
+                             </div>        
+                        </div> 
+
+                      </div> 
+                      <!-- Add Pagination -->
+                      <div class="swiper-pagination mt-5"></div>
+                      <div class="swiper-button-next"> <i class="fas fa-arrow-right"></i></div>
+                      <div class="swiper-button-prev"> <i class="fas fa-arrow-left"></i> </div>
+                    </div>
+           
+ 
+            
+
               </div>
-
-              <div class=" m-auto team-card card-none">
-                  <img class="img-fluid" src="./images/member-2.jpg">
-                 <div class="team-card-content">
-                  <p> <i class="fas fa-quote-left"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="fas fa-quote-right"></i></p>
-                  <h5>Elizabeth Taylor</h5>
-                  <p>Designer</p>
-                 </div>
-               </div>
-
-               <div class=" m-auto team-card card-none">
-                  <img class="img-fluid" src="./images/member-3.jpg">
-                 <div class="team-card-content">
-                  <p> <i class="fas fa-quote-left"></i> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <i class="fas fa-quote-right"></i></p>
-                  <h5>Jack Richer
-                    </h5>
-                  <p>UI/UX Designer </p>
-                 </div>
-               </div>
-               
-               <i class="fas fa-long-arrow-alt-left leftt"></i>
-               <i class="fas fa-long-arrow-alt-right rightt"></i>
-
-              </div>
-
-
               </div>
        </section>   
        
@@ -602,7 +632,7 @@
               </div>
 
               <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Message"></textarea>
+                <textarea class="form-control mytextarea" id="exampleFormControlTextarea1" rows="2" placeholder="Message"></textarea>
               </div>
               <button type="button" class="btn  btn-block "><i class="fas fa-share-square"></i> Send Message</button>
             </form>
@@ -643,13 +673,18 @@
 	<!-- end sccroll-top   -->
 
 
-    
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-    
+<!--     
     <script src="js/jquery-3.3.1.min.js"></script>    
     <script src="jS/bootstrap.min.js"></script>
-	<script src="js/popper.min.js" ></script>
+  <script src="js/popper.min.js" ></script> -->
+  <script src="js/swiper.min.js" ></script>
  	<script src="js/main.js"></script>
 </body>
 </html>
