@@ -35,13 +35,14 @@ $(document).ready(function(){
 //     }) 
 // }
 // });
-
-// $(window).scroll(function(){
-//     if($(window).scrollTop()>5){
-//     $(".big-nav").addClass("big-nav-fixed"); }
-//     else $(".big-nav").removeClass("big-nav-fixed"); });
-
 // end team section
+
+// nav  baaaaaaaaaaaaaaaar
+$(window).scroll(function(){
+    if($(window).scrollTop()>5){
+    $(".big-nav").addClass("big-nav-fixed"); }
+    else $(".big-nav").removeClass("big-nav-fixed"); });
+
 
 	/* sccroll-top  */
 
