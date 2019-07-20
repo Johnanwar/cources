@@ -135,6 +135,9 @@ a:hover{
   text-transform: uppercase;
   cursor: pointer;
 }
+.big-nav-home .course-link-hover a{
+   font-family: Sans-serif	!important;
+  }
 .big-nav-fixed .navbar-collapse{
 	background-color: #ccc;
 	/* text-align: center; */
@@ -171,7 +174,7 @@ a:hover{
 	right: -124px;
 	box-shadow: 1px 2px 2px 2px;
 	padding: 5px;
-	top: 68px;
+	top: 63px;
 	text-transform: capitalize;
 	overflow: hidden;
 	transform: scale(0) ;
