@@ -130,6 +130,7 @@ h5{
 .big-nav-home .nav-item a{
   color:#fff!important;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .big-nav-fixed .navbar-collapse{
 	background-color: #ccc;
@@ -151,156 +152,7 @@ h5{
 .big-nav-home .nav-item a:hover{
 	color:#000!important;
   }
-
-.social-container .btn-sc {
-  position: relative;
-  display: inline-block;
-  width: 31px;
-  height: 24px;
-  border: none;
-  color: #fff;
-  text-align: center;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.11);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.social-btn .main-btn {
-	box-shadow: none;
-
-}
-
-.btn-sc:active, .btn-sc:focus {
-  outline: none;
-}
-
-.main-btn:active {
-  transform:scale(1.17);
-}
-.social-container .social-btn {
-  position: relative;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.social-btn .social-btn-list {
-  position: absolute;
-  right: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.social-btn .social-btn-list li {
-  display: inline-block;
-}
-.social-btn.open .icon-bars {
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-
-
-.social-container .social-btn .icon-bars {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.social-container .social-btn .social-btn-list .btn-sc {
-  position: absolute;
-  right: 0;
-  top: 0;
-  opacity: 0;
-}
-.social-container .social-btn .social-btn-list .btn-sc:nth-child(1) {
-  -moz-transition: 0.3s 1.2s;
-  -o-transition: 0.3s 1.2s;
-  -webkit-transition: 0.3s;
-  -webkit-transition-delay: 1.2s;
-  -webkit-transition: 0.3s 1.2s;
-  transition: 0.3s 1.2s;
-}
-.social-container .social-btn .social-btn-list .btn-sc:nth-child(2) {
-  -moz-transition: 0.3s 0.9s;
-  -o-transition: 0.3s 0.9s;
-  -webkit-transition: 0.3s;
-  -webkit-transition-delay: 0.9s;
-  -webkit-transition: 0.3s 0.9s;
-  transition: 0.3s 0.9s;
-}
-.social-container .social-btn .social-btn-list .btn-sc:nth-child(3) {
-  -moz-transition: 0.3s 0.6s;
-  -o-transition: 0.3s 0.6s;
-  -webkit-transition: 0.3s;
-  -webkit-transition-delay: 0.6s;
-  -webkit-transition: 0.3s 0.6s;
-  transition: 0.3s 0.6s;
-}
-.social-container .social-btn .social-btn-list .btn-sc:nth-child(4) {
-  -moz-transition: 0.3s 0.3s;
-  -o-transition: 0.3s 0.3s;
-  -webkit-transition: 0.3s;
-  -webkit-transition-delay: 0.3s;
-  -webkit-transition: 0.3s 0.3s;
-  transition: 0.3s 0.3s;
-}
-.social-container .social-btn.open .social-btn-list .btn-sc {
-  opacity: 1;
-}
-.social-container .social-btn.open .social-btn-list .btn-sc:nth-child(1) {
-  top: 266px;
-  -moz-transition: 0.3s 0.3s;
-  -o-transition: 0.3s 0.3s;
-  -webkit-transition: 0.3s;
-  -webkit-transition-delay: 0.3s;
-  -webkit-transition: 0.3s 0.3s;
-  transition: 0.3s 0.3s;
-}
-.social-container .social-btn.open .social-btn-list .btn-sc:nth-child(2) {
-  top: 200px;
-  -moz-transition: 0.3s 0.6s;
-  -o-transition: 0.3s 0.6s;
-  -webkit-transition: 0.3s;
-  -webkit-transition-delay: 0.6s;
-  -webkit-transition: 0.3s 0.6s;
-  transition: 0.3s 0.6s;
-}
-.social-container .social-btn.open .social-btn-list .btn-sc:nth-child(3) {
-  top: 135px;
-  -moz-transition: 0.3s 0.9s;
-  -o-transition: 0.3s 0.9s;
-  -webkit-transition: 0.3s;
-  -webkit-transition-delay: 0.9s;
-  -webkit-transition: 0.3s 0.9s;
-  transition: 0.3s 0.9s;
-}
-.social-container .social-btn.open .social-btn-list .btn-sc:nth-child(4) {
-  top: 70px;
-  -moz-transition: 0.3s 1.2s;
-  -o-transition: 0.3s 1.2s;
-  -webkit-transition: 0.3s;
-  -webkit-transition-delay: 1.2s;
-  -webkit-transition: 0.3s 1.2s;
-  transition: 0.3s 1.2s;
-}
-
-.facebook {
-  background: #3a5795;
-}
-
-.twitter {
-  background: #55acee;
-}
-
-.gplus {
-  background: #dd4b39;
-}
-
-.pinterest {
-  background: #bd081c;
-}
-
-.bars {
-  background-color: transparent
-}
+ 
 .course-link-nav {
 	position: relative;
 }
@@ -312,14 +164,17 @@ h5{
 .course-link-hover{
 	position: absolute;
 	background-color: rgba(255,255,255,.1);
-	width: 430px;
-	right: -205px;
+	width: 460px;
+	right: -124px;
+    box-shadow: 1px 2px 2px 2px;
 	padding: 5px;
 	top: 68px;
 	text-transform: capitalize;
 	overflow: hidden;
 	transform: scale(0) ;
 	transition-delay: .5s;
+	max-height: 40vh;
+    overflow-y: auto;
 }
 .big-nav-fixed .course-link-hover{
 	background-color: #ccc;
@@ -952,10 +807,17 @@ h5{
 		padding: 5px;
 		top: 0px;
 		display: none;
+		max-height: 40vh;
+		overflow-y: auto;
+		box-shadow: none;
+	}
+	.big-nav-fixed {
+		height: auto;
 	}
 	.course-link-nav:hover .course-link-hover{
 	 display: block;
 	}
+	
 
 	
 	
@@ -973,3 +835,153 @@ h5{
 
 }
 
+/* 
+.social-container .btn-sc {
+  position: relative;
+  display: inline-block;
+  width: 31px;
+  height: 24px;
+  border: none;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.11);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.social-btn .main-btn {
+	box-shadow: none;
+
+}
+
+.btn-sc:active, .btn-sc:focus {
+  outline: none;
+}
+
+.main-btn:active {
+  transform:scale(1.17);
+}
+.social-container .social-btn {
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.social-btn .social-btn-list {
+  position: absolute;
+  right: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.social-btn .social-btn-list li {
+  display: inline-block;
+}
+.social-btn.open .icon-bars {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+.social-container .social-btn .icon-bars {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.social-container .social-btn .social-btn-list .btn-sc {
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+.social-container .social-btn .social-btn-list .btn-sc:nth-child(1) {
+  -moz-transition: 0.3s 1.2s;
+  -o-transition: 0.3s 1.2s;
+  -webkit-transition: 0.3s;
+  -webkit-transition-delay: 1.2s;
+  -webkit-transition: 0.3s 1.2s;
+  transition: 0.3s 1.2s;
+}
+.social-container .social-btn .social-btn-list .btn-sc:nth-child(2) {
+  -moz-transition: 0.3s 0.9s;
+  -o-transition: 0.3s 0.9s;
+  -webkit-transition: 0.3s;
+  -webkit-transition-delay: 0.9s;
+  -webkit-transition: 0.3s 0.9s;
+  transition: 0.3s 0.9s;
+}
+.social-container .social-btn .social-btn-list .btn-sc:nth-child(3) {
+  -moz-transition: 0.3s 0.6s;
+  -o-transition: 0.3s 0.6s;
+  -webkit-transition: 0.3s;
+  -webkit-transition-delay: 0.6s;
+  -webkit-transition: 0.3s 0.6s;
+  transition: 0.3s 0.6s;
+}
+.social-container .social-btn .social-btn-list .btn-sc:nth-child(4) {
+  -moz-transition: 0.3s 0.3s;
+  -o-transition: 0.3s 0.3s;
+  -webkit-transition: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -webkit-transition: 0.3s 0.3s;
+  transition: 0.3s 0.3s;
+}
+.social-container .social-btn.open .social-btn-list .btn-sc {
+  opacity: 1;
+}
+.social-container .social-btn.open .social-btn-list .btn-sc:nth-child(1) {
+  top: 266px;
+  -moz-transition: 0.3s 0.3s;
+  -o-transition: 0.3s 0.3s;
+  -webkit-transition: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -webkit-transition: 0.3s 0.3s;
+  transition: 0.3s 0.3s;
+}
+.social-container .social-btn.open .social-btn-list .btn-sc:nth-child(2) {
+  top: 200px;
+  -moz-transition: 0.3s 0.6s;
+  -o-transition: 0.3s 0.6s;
+  -webkit-transition: 0.3s;
+  -webkit-transition-delay: 0.6s;
+  -webkit-transition: 0.3s 0.6s;
+  transition: 0.3s 0.6s;
+}
+.social-container .social-btn.open .social-btn-list .btn-sc:nth-child(3) {
+  top: 135px;
+  -moz-transition: 0.3s 0.9s;
+  -o-transition: 0.3s 0.9s;
+  -webkit-transition: 0.3s;
+  -webkit-transition-delay: 0.9s;
+  -webkit-transition: 0.3s 0.9s;
+  transition: 0.3s 0.9s;
+}
+.social-container .social-btn.open .social-btn-list .btn-sc:nth-child(4) {
+  top: 70px;
+  -moz-transition: 0.3s 1.2s;
+  -o-transition: 0.3s 1.2s;
+  -webkit-transition: 0.3s;
+  -webkit-transition-delay: 1.2s;
+  -webkit-transition: 0.3s 1.2s;
+  transition: 0.3s 1.2s;
+}
+
+.facebook {
+  background: #3a5795;
+}
+
+.twitter {
+  background: #55acee;
+}
+
+.gplus {
+  background: #dd4b39;
+}
+
+.pinterest {
+  background: #bd081c;
+}
+
+.bars {
+  background-color: transparent
+} */

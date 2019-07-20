@@ -1,8 +1,8 @@
 $(document).ready(function(){
     // social links
-  $('.main-btn').click(function(){
-    $(this).closest('.social-btn').toggleClass('open');
-  });
+//   $('.main-btn').click(function(){
+//     $(this).closest('.social-btn').toggleClass('open');
+//   });
 
 // team section
 
