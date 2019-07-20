@@ -133,11 +133,11 @@ h5{
 }
 .big-nav-fixed .navbar-collapse{
 	background-color: #ccc;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .big-nav-fixed .nav-item a{
-	color:#333!important;
+	color:#00a2b1!important;
 	font-weight: bold;
     margin-right: 10px;
   }
@@ -149,7 +149,7 @@ h5{
 	color: rgb(5, 5, 5) !important;
   }
 .big-nav-home .nav-item a:hover{
-	color:#00a2b1!important;
+	color:#000!important;
   }
 
 .social-container .btn-sc {
@@ -301,8 +301,44 @@ h5{
 .bars {
   background-color: transparent
 }
+.course-link-nav {
+	position: relative;
+}
+.course-link-nav:hover .course-link-hover{
 
+	transform: scale(1) ;
 
+}
+.course-link-hover{
+	position: absolute;
+	background-color: rgba(255,255,255,.1);
+	width: 430px;
+	right: -205px;
+	padding: 5px;
+	top: 68px;
+	text-transform: capitalize;
+	overflow: hidden;
+	transform: scale(0) ;
+	transition-delay: .5s;
+}
+.big-nav-fixed .course-link-hover{
+	background-color: #ccc;
+}
+.big-nav-fixed  .course-link-nav .hea{
+	color: #fff;
+}
+.course-link-hover .hea{
+    font-weight: bold;
+}
+.course-link-hover p a{
+	text-transform: capitalize!important;
+}
+.course-link-hover .row hr{
+	border-bottom: 1px solid #00a2b1;
+    background-color: #00a2b1;
+    width: 126%;
+    margin: 11px auto;
+}
 
 
 /* end nav section */
@@ -622,9 +658,22 @@ h5{
 	-moz-border-radius: 5px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
+	overflow: hidden;
+}
+.course-content h4{
+	font-size: 18px;
 }
 .course-content h4:hover{
  color: #00a2b1;
+}
+.course-content .d-flex img{
+	width: 40px;
+	height: 40px !important;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
 }
 .course-content .course-teacher a{
 	font-style: italic;
@@ -656,9 +705,8 @@ h5{
 	color: #c0c1cd;
 }
 .course-card img{
-	/* width: 351px; */
 	width: 100%;
-	height: 286px!important;
+	height: 150px!important;
 }
 .corse-android{
 	position: relative;
@@ -669,11 +717,11 @@ h5{
 }
 .course-card:hover  img{
 	opacity:.6;
-	transform: scale(1.008);
-	-webkit-transform: scale(1.008);
-	-moz-transform: scale(1.008);
-	-ms-transform: scale(1.008);
-	-o-transform: scale(1.008);
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
 }
 .android::after{
 	position: absolute;
@@ -712,9 +760,12 @@ h5{
 /* end courses section */
 
 /* start pics section */
-
+.pics-container img{
+	opacity: .8;
+	height: 80px;
+}
 .pics-container img:hover{
-	opacity: .6;
+	opacity: 1;
 }
 .pics-container{
 	background-color: #fff;
@@ -886,6 +937,26 @@ h5{
 	.big-nav .navbar-nav , .big-nav-fixed .nav-item a {
 		margin-right: 0 !important;
 	}
+	.big-nav-fixed .navbar-collapse{
+     padding-left: 5px;
+	}
+	.course-link-hover{
+		position: relative;
+		transform: scale(1)	;
+		-webkit-transform: scale(1)	;
+		-moz-transform: scale(1)	;
+		-ms-transform: scale(1)	;
+		-o-transform: scale(1)	;
+		width:100%;
+		right: 0px;
+		padding: 5px;
+		top: 0px;
+		display: none;
+	}
+	.course-link-nav:hover .course-link-hover{
+	 display: block;
+	}
+
 	
 	
 	
