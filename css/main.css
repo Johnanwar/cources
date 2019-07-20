@@ -27,9 +27,7 @@ a:hover{
 .main-color{
 	color: #00a2b1;
 }
-h5{
-	font-family: 'Merriweather', serif;
-}
+
 
 ::-webkit-scrollbar{
 	background-color: #00a2b1;
@@ -171,7 +169,7 @@ h5{
 	background-color: rgba(255,255,255,.1);
 	width: 460px;
 	right: -124px;
-    box-shadow: 1px 2px 2px 2px;
+	box-shadow: 1px 2px 2px 2px;
 	padding: 5px;
 	top: 68px;
 	text-transform: capitalize;
@@ -179,13 +177,21 @@ h5{
 	transform: scale(0) ;
 	transition-delay: .5s;
 	max-height: 40vh;
-    overflow-y: auto;
+	overflow-y: auto;
+	border-radius:10px ;
+	-webkit-border-radius:10px ;
+	-moz-border-radius:10px ;
+	-ms-border-radius:10px ;
+	-o-border-radius:10px ;
 }
 .big-nav-fixed .course-link-hover{
 	background-color: #ccc;
 }
 .big-nav-fixed  .course-link-nav .hea{
 	color: #fff;
+}
+.big-nav-fixed  .course-link-nav .hea a{
+	font-family: Sans-serif	!important;
 }
 .course-link-hover .hea{
     font-weight: bold;
@@ -206,7 +212,7 @@ h5{
 
 .nav-branch .nav-item a{
 	color:#00a2b1!important;
-	font-weight: bold;
+	/* font-weight: bold; */
     margin-right: 10px;
   }
 
@@ -885,13 +891,15 @@ h5{
 		-moz-transform: scale(1)	;
 		-ms-transform: scale(1)	;
 		-o-transform: scale(1)	;
-		width:100%;
+		width:100%!important;
 		right: 0px;
 		padding: 5px;
 		top: 0px;
 		display: none;
 		max-height: 40vh;
 		overflow-y: auto;
+		box-shadow: none;
+		text-align: left !important;
 		box-shadow: none;
 	}
 	.big-nav-fixed {
