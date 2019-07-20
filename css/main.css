@@ -194,6 +194,33 @@ h5{
     width: 126%;
     margin: 11px auto;
 }
+/* nraaaaaaaaaanch naaaaaaaaaaaaaav */
+.nav-branch .navbar-collapse{
+	background-color: #ccc;
+}
+
+.nav-branch .nav-item a{
+	color:#00a2b1!important;
+	font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .nav-branch .nav-item .social-container a{
+	color: #fff !important;
+  }
+  .nav-branch .nav-item .social-container .main-btn{
+	color: rgb(5, 5, 5) !important;
+  }
+.nav-branch .course-link-hover{
+	background-color: #ccc;
+}
+.nav-branch{
+	background-color: #ccc;
+}
+.nav-branch .course-link-nav .hea{
+	color: #fff;
+}
+
 
 
 /* end nav section */
@@ -368,7 +395,8 @@ h5{
 	position: relative;
 	font-size: 38px;
     line-height: 38px;
-    font-weight: 700;
+	font-weight: 700;
+	/* text-transform: capitalize; */
   }
 
 .header hr {
@@ -748,6 +776,56 @@ h5{
 	color: #00a2b1;
 	background-color: #fff
 }
+/* end all laaaaaaaaanding page */
+/* training paaaaaaaaaaaaaaage */
+.train-page .header  h3::after{
+ content: "T"!important
+}
+.train-page{
+	font-size: 18px;
+}
+/* end training paaaaaaaaaaaaaaage */
+/* consult paaaaaaaaaaaaaaaage */
+.consult-page .header  h3::after{
+	content: "C"!important
+   }
+   .consult-page{
+	font-size: 18px;
+}
+/* consult paaaaaaaaaaaaaaaage */
+/* Assessment paaaaaaaaaaaaaaaage */
+.Assessment-page .header  h3::after{
+	content: "A"!important
+   }
+   .Assessment-page{
+	font-size: 18px;
+}
+/* Assessment paaaaaaaaaaaaaaaage */
+/* Assessment paaaaaaaaaaaaaaaage */
+.TQM-page .header  h3::after{
+	content: "T"!important
+   }
+   .train-page{
+	font-size: 18px;
+}
+/* TQM paaaaaaaaaaaaaaaage */
+/* Assessment paaaaaaaaaaaaaaaage */
+.Management-page .header  h3::after{
+	content: "P"!important
+   }
+   .Management-page{
+	font-size: 18px;
+}
+/* TQM paaaaaaaaaaaaaaaage */
+/* about paaaaaaaaaaaaaaaage */
+.about-page .header  h3::after{
+	content: "A"!important
+   }
+   .about-page{
+	   font-size: 18px;
+   }
+/* about paaaaaaaaaaaaaaaage */
+
 
 
 
