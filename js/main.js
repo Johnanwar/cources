@@ -1,41 +1,18 @@
+ 
+function spiner(){
+    $(".spinner-fixed").fadeOut(1000 , function(){ $("body").css("overflow","auto") });
+
+}
+window.addEventListener('load',function(){
+    console.log("jjj");
+    spiner()
+
+})
+
+
 $(document).ready(function(){
-    // social links
-//   $('.main-btn').click(function(){
-//     $(this).closest('.social-btn').toggleClass('open');
-//   });
-
-// team section
 
 
-// function checkClent(){
-
-//     if($(".team-card:first").hasClass('active')){
-//         $(".leftt").fadeOut(0);
-//     }else{
-//         $(".leftt").fadeIn(0);
-//     }
-
-//     if($(".team-card:last").hasClass('active')){
-//         $(".rightt").fadeOut(0);
-//     }else{
-//         $(".rightt").fadeIn(0);
-//     }
-// }
-// checkClent();
-// $('.team-persons i').click(function(){
-//     if( $(this).hasClass("rightt") ){
-//         $('.team-persons .active').fadeOut(100 ,function(){
-//             $(this).removeClass('active').next('.team-card').addClass("active").fadeIn();
-//             checkClent();
-//     }) 
-//     } else if( $(this).hasClass("leftt") ){
-//         $('.team-persons .active').fadeOut(100 ,function(){
-//             $(this).removeClass('active').prev('.team-card').addClass("active").fadeIn();
-//             checkClent()
-//     }) 
-// }
-// });
-// end team section
 
 // nav  baaaaaaaaaaaaaaaar
 $(window).scroll(function(){
@@ -50,7 +27,7 @@ $(window).scroll(function(){
 	      $("html , body").animate({ scrollTop: 0	},1000)	});  
 		 
 	    $(window).scroll( function () {	
-		 if ($(window). scrollTop () >= 600){$(".sccroll-top i").fadeIn(400)}
+		 if ($(window). scrollTop () >= 100){$(".sccroll-top i").fadeIn(400)}
 		 else ($(".sccroll-top i").fadeOut(400) )
 	
 	                                });
