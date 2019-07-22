@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
 	
-*
-	{
+*{
 		padding: 0;
 		margin: 0;
 		-webkit-box-sizing: border-box;
@@ -16,14 +14,13 @@
 	} */
 	a{
 		color: #383749;
-		font-family: 'Lobster', cursive;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 	p ,span{
-		font-family: 'Kalam', cursive;
+		font-family: 'Roboto Condensed', sans-serif;
 	}
 	h3, h4, h5{
-		font-family: 'Lobster', cursive;
-
+		font-family: 'Merriweather', serif;
 	}
 	a:hover{
 		text-decoration:none ;
@@ -194,6 +191,7 @@
 .big-nav {
  background-color: rgba(255,255,255,.1);
  z-index: 999999999;
+ height: 85px;
 }
 .big-nav-fixed{
 	position: fixed;
@@ -222,7 +220,7 @@
 
 .big-nav-fixed .nav-item a{
 	color:#00a2b1!important;
-	/* font-weight: bold; */
+	font-weight: bold;
     margin-right: 10px;
   }
 
@@ -251,18 +249,13 @@
 	right: -124px;
 	font-size: 14px;
 	padding: 5px;
-	top: 63px;
+	top: 61px;
 	text-transform: capitalize;
 	overflow: hidden;
 	transform: scale(0) ;
 	transition-delay: .5s;
 	max-height: 40vh;
 	overflow-y: auto;
-	border-radius:10px ;
-	-webkit-border-radius:10px ;
-	-moz-border-radius:10px ;
-	-ms-border-radius:10px ;
-	-o-border-radius:10px ;
 }
 .big-nav-fixed .course-link-hover{
 	background-color: #ccc;
@@ -766,7 +759,8 @@
 	margin: auto;
 }
 .contact-container{
-	background-color: #f7f7f7
+	background-color: #f7f7f7;
+	border-bottom: 1px solid #00a2b1;
 }
 .footer-form .btn{
 	background-color: #00a2b1!important;
@@ -987,6 +981,17 @@
 }
 /* endddd maaaaaaaaain course paaaaaaaage */
 /* start pics category paaaaaaaaaaaaage */
+.courses-pics h3::after{
+	content: "C";
+}
+.courses-pics{
+	background-color: #eee;
+}
+.courses-pics .row .category-branch{
+	background-color: #ccc;
+	border: 1px solid #fff;
+	padding: 5px;
+}
 
 /* end pics category paaaaaaaaaaaaage */
 
