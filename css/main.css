@@ -1129,6 +1129,7 @@
 }
 .category-left-side{
 	border: 1px solid #eee;
+	box-shadow: 2px 2px 2px 2px #eee ,-2px -2px 2px 2px #eee;
 }
 .category-left-side h5{
 	padding: 10px 0 10px 10px;	
