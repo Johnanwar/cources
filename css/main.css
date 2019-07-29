@@ -120,7 +120,7 @@
 
 /* start section above nav bar  */
 .top-header-bar {
-    background: #fff;
+    background: #eee;
 }
 .header-bar-email {
     padding-left: 16px;
@@ -155,7 +155,7 @@
     padding: 12px 26px;
     border: 0;
     line-height: 1;
-    background: #f3f3f3;
+    background: #fff;
 	color: #383749;
 }
 .header-bar-search button[type="submit"] {
@@ -189,7 +189,7 @@
 	outline: none
 }
 .big-nav {
- background-color: rgba(255,255,255,.1);
+ background-color: #fff;
  z-index: 999999999;
  height: 85px;
 }
@@ -199,14 +199,15 @@
 	left: 0;
 	right: 0;
 	height: 85px;
-	background-color: #ccc;
+	background-color: #fff;
+    box-shadow: 2px 2px 2px #eee;
 }
 .nav-logo img{
 	width: 200px;
 	height: 70px;
   }
 .big-nav-home .nav-item a{
-  color:#fff!important;
+  color:#00a2b1!important;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
@@ -215,7 +216,7 @@
    font-family: Sans-serif	!important;
   }
 .big-nav-fixed .navbar-collapse{
-	background-color: #ccc;
+	background-color: #fff;
 	/* text-align: center; */
 }
 
@@ -239,45 +240,68 @@
 	position: relative;
 }
 .course-link-nav:hover .course-link-hover{
-
 	transform: scale(1) ;
-
+	-webkit-transform: scale(1) ;
+	-moz-transform: scale(1) ;
+	-ms-transform: scale(1) ;
+	-o-transform: scale(1) ;
 }
 .course-link-hover{
 	position: absolute;
-	background-color: rgba(255,255,255,.1);
 	width: 460px;
 	right: -124px;
 	font-size: 14px;
 	padding: 5px;
-	top: 61px;
+	top: 63px;
 	text-transform: capitalize;
 	overflow: hidden;
 	transform: scale(0) ;
-	transition-delay: .5s;
-	max-height: 40vh;
+	-webkit-transform: scale(0) ;
+	-moz-transform: scale(0) ;
+	-ms-transform: scale(0) ;
+	-o-transform: scale(0) ;
+	max-height: 60vh;
 	overflow-y: auto;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px #eee, -2px 0 2px #eee;
 }
-.big-nav-fixed .course-link-hover{
-	background-color: #ccc;
+.course-link-hover .hea h5{
+ background-color: #00a2b1;
+ font-size: 15px;
+ color: #fff;
+ padding: 5px;
+ margin-bottom: 10px;
 }
-.big-nav-fixed  .course-link-nav .hea{
+.course-link-hover .hea i{
+	background-color: #139eb1;
 	color: #fff;
+	/* font-size: 18px; */
+	padding: 5px;
+	border-radius: 50%;
 }
-.big-nav-fixed  .course-link-nav .hea a{
-	font-family: Sans-serif	!important;
+.course-link-hover .hea p:hover i{
+	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 }
-.course-link-hover .hea{
-    font-weight: bold;
-}
+
+
 .course-link-hover p a{
 	text-transform: capitalize!important;
+	font-weight: normal!important;
 }
 .course-link-hover .row hr{
-	border-bottom: 1px solid #00a2b1;
-    background-color: #00a2b1;
-    width: 126%;
-    margin: 11px auto;
+	border-bottom: 1px solid #174d85;
+	display: none;
+    background-color: #174d85;
+    width: 25%;
+    margin-right: auto;
+}
+.hea-midle{
+	border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
 }
 /* nraaaaaaaaaanch naaaaaaaaaaaaaav */
 .nav-branch .navbar-collapse{
@@ -333,6 +357,7 @@
 	width: 100%;
 	height: 100%;
 	animation: fade1 30s infinite;
+	-webkit-animation: fade1 30s infinite;
 }
 
 
@@ -344,7 +369,7 @@
 	width: 100%;
 	height: 100%;
 	animation: fade2 30s infinite;
-
+	-webkit-animation: fade2 30s infinite;
 }
 
 .slide-3 {
@@ -355,6 +380,7 @@
 	width: 100%;
 	height: 100%;
 	animation: fade3 30s infinite;
+	-webkit-animation: fade3 30s infinite;
 }
 
 @keyframes fade1 {
@@ -414,7 +440,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(51, 51, 51, .8)
+	background-color: rgba(51, 51, 51, .2)
 }
 .overlay
 {
@@ -449,7 +475,8 @@
 .home-content p {
 	color: #fff;
 	text-transform: capitalize;
-	font-size: 25px
+	font-size: 32px;
+	font-weight: bolder;
 }
 .home-content p span{
 	color: #00a2b1;
@@ -493,7 +520,7 @@
 }
 .header h3::after{
 	position: absolute;
-	content: "O";
+	content: "C";
     font-size: 2em;
     opacity: .06;
     top: -0.25em;
@@ -512,13 +539,17 @@
 	letter-spacing: .1em;
 }
 .read-more a i {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
 	transition: all .35s;
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	-ms-transition: all .35s;
+	-o-transition: all .35s;
 }
 .service-box:hover .read-more a i {
 	left: 100%;}
@@ -532,7 +563,8 @@
 }
 .service-box{
 	height: 100%;
-	box-shadow: 2px 2px 3px #eee
+	box-shadow: 2px 2px 3px #eee;
+	padding: 5px;
 }
 .service-box h5{
 	text-transform: uppercase;
@@ -730,6 +762,15 @@
 .course-button:hover a{
 	color: #00a2b1;
 }
+.credited p{
+	color: #7e8388 ;
+	font-size: 22px;
+}
+.credited span{
+	font-weight: bold;
+	letter-spacing: 3px;
+	color: #c91d82;
+}
 /* end courses section */
 
 /* start pics section */
@@ -761,7 +802,6 @@
 }
 .contact-container{
 	background-color: #f7f7f7;
-	border-bottom: 1px solid #00a2b1;
 }
 .footer-form .btn{
 	background-color: #00a2b1!important;
@@ -869,6 +909,24 @@
 }
 /* end all laaaaaaaaanding page */
 /* training paaaaaaaaaaaaaaage */
+.train-page{
+	background: url(../images/training.jpeg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+	position: relative;
+	height: 800px;
+}
+.training-overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	/* height: 100%; */
+	background-color: rgba(51, 51, 51, .8)
+}
 .train-page .header  h3::after{
  content: "T"!important
 }
@@ -883,6 +941,14 @@
    .consult-page{
 	font-size: 18px;
 }
+.consult-page{
+	background: url(../images/ass.jpg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+	position: relative;
+	height: 800px;
+}
 /* consult paaaaaaaaaaaaaaaage */
 /* Assessment paaaaaaaaaaaaaaaage */
 .Assessment-page .header  h3::after{
@@ -890,6 +956,14 @@
    }
    .Assessment-page{
 	font-size: 18px;
+}
+.Assessment-page{
+	background: url(../images/assessment.jpeg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+	position: relative;
+	height: 450px;
 }
 /* Assessment paaaaaaaaaaaaaaaage */
 /* Assessment paaaaaaaaaaaaaaaage */
@@ -899,8 +973,24 @@
    .train-page{
 	font-size: 18px;
 }
+.TQM-page{
+	background: url(../images/qm.jpg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+	position: relative;
+	height: 600px;
+}
 /* TQM paaaaaaaaaaaaaaaage */
 /* Assessment paaaaaaaaaaaaaaaage */
+.Management-page{
+	background: url(../images/manage.jpg);
+	background-size: cover;
+	color: #fff;
+	background-attachment: fixed;
+	position: relative;
+	height: 450px;
+}
 .Management-page .header  h3::after{
 	content: "P"!important
    }
@@ -909,18 +999,42 @@
 }
 /* TQM paaaaaaaaaaaaaaaage */
 /* about paaaaaaaaaaaaaaaage */
-.about-page .header  h3::after{
-	content: "A"!important
+.about-panner .header  h3::after{
+	content: "A"!important;
+	color: #fff !important;
+	opacity: .4;
    }
-   .about-page{
+   .about-panner h3{
+	   color: #00a2b1;
+	   font-size: 45px;
+   }
+   /* .about-page{
 	   font-size: 18px;
+   } */
+ .about-panner{
+	background: url(../images/about.jpg);
+	background-size: cover;
+	 height: 500px;
+   }
+   .about-page hr{
+	   width: 100%;
+	   background-color: #eee
    }
 /* about paaaaaaaaaaaaaaaage */
 /* contact paaaaaaaaaaaaaaaage */
-.contact-page .header  h3::after{
-	content: "C"!important
+.all-contact-page{
+	background: url(../images/dotted-map.jpg);
+	background-size: cover;
+	 height: 500px;
+}
+.all-contact-page .header  h3{
+	font-size: 45px;
    }
-
+.all-contact-page .header  h3::after{
+	content: "C"!important;
+	color: #fff;
+   }
+/* 
    .office-info{
 	   box-shadow: 1px 2px 2px  #ccc, -1px -2px 3px  #ccc;
 	   padding: 5px 15px;;
@@ -931,13 +1045,46 @@
 	   -o-border-radius: 10px;
 	   height: 100%;
 	   background-color: #eee
-}
+} */
+/* .contact-page{
+	background: url(../images/m.jpg);
+	background-size: cover;
+	 background-attachment: fixed;
+	 color: #fff;
+} */
 .footer-form input:focus ,.footer-form textarea:focus ,.footer-form .btn:focus{
-	box-shadow: 1px 1px 2px #c0c1cd
+	box-shadow: 1px 1px 2px #c0c1cd;
+}
+.footer-form input ,.footer-form textarea {
+	background-color: #fff;
 }
 .contact-page .footer-form .btn{
 	width: 40%;
 	margin-left: 30%!important;
+}
+.office-info h5{
+	font-size: 35px;
+	font-weight: bold;
+	color: #174d85;
+}
+.office-info hr{
+	background-color: #eee;
+	width: 10%;
+}
+.contact-page .footer-form .btn {
+	width: 30% ;
+    margin-left: 35%!important;
+	
+  }
+.office-info i{
+	color: #fff;
+	background-color: #00a2b1;
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 /* contact paaaaaaaaaaaaaaaage */
@@ -1035,7 +1182,7 @@
 		font-size: 20px;
 	}
 	.big-nav{
-		background-color: #ccc;
+		background-color: #fff;
 	}
 	.onlybig{
 		display: none;
@@ -1073,29 +1220,41 @@
 	.course-link-nav:hover .course-link-hover{
 	 display: block;
 	}
+	.contact-page .footer-form .btn {
+		width: 70%;
+		margin-left: 15%!important;
 }
-
-.contact-page .footer-form .btn {
-    width: 70%;
-    margin-left: 15%!important;
-
+	.train-page , .consult-page{
+	height: 1000px;
+	}
+	.Assessment-page ,.Management-page{
+		height: 600px;
+	}
+	.TQM-page{
+		height: 700px;
+	}
 	
 
-	
-	
+
 	
   }
 
-  @media screen and (max-width: 450px) {	
-	.copyright{
-	font-size: 16px;
-	}
-	.social{
-		text-align: center;
-		float: none!important;
-	}
+@media only screen and (max-width: 600px) {
+	.train-page ,.consult-page {
+		height: 1297px;
+		}
+		.Assessment-page{
+			height: 1000px;
+		}
+		.TQM-page{
+			height: 1080px;
+		}
+		.Assessment-page .header h3 , .TQM-page .header h3{
+			position: relative;
+			font-size: 27px;
+		}
+  }
 
-}
 
 /* 
 .social-container .btn-sc {
