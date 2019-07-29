@@ -1127,6 +1127,21 @@
 .main-coursee-contentblu .blu{
 	color: #174d85;
 }
+.category-left-side{
+	border: 1px solid #eee;
+}
+.category-left-side h5{
+	padding: 10px 0 10px 10px;	
+}
+.category-left-side a{
+	display: block;
+	border-top: 1px solid #eee;
+	padding: 10px 0 10px 10px;
+	border-left: 3px solid #fff;
+}
+.category-left-side a:hover{
+	border-left: 3px solid #139eb1;
+}
 /* endddd maaaaaaaaain course paaaaaaaage */
 /* start pics category paaaaaaaaaaaaage */
 .courses-pics h3::after{
@@ -1139,6 +1154,14 @@
 	background-color: #ccc;
 	border: 1px solid #fff;
 	padding: 5px;
+}
+.category-cat .form-control:focus{
+	outline: none;
+	box-shadow: 1px 1px 1px #139eb1 ,-1px -1px 1px #139eb1;
+}
+.category-cat .btn{
+	background-color: #139eb1;
+	color: #fff;
 }
 
 /* end pics category paaaaaaaaaaaaage */
