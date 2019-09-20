@@ -3,11 +3,11 @@ function spiner(){
     $(".spinner-fixed").fadeOut(1000 , function(){ $("body").css("overflow","auto") });
 
 }
-window.addEventListener('load',function(){
-    console.log("jjj");
-    spiner()
+// window.addEventListener('load',function(){
+//     console.log("jjj");
+//     spiner()
 
-})
+// })
 
 
 $(document).ready(function(){
