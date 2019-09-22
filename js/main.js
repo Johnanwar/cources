@@ -3,11 +3,11 @@ function spiner(){
     $(".spinner-fixed").fadeOut(1000 , function(){ $("body").css("overflow","auto") });
 
 }
-// window.addEventListener('load',function(){
-//     console.log("jjj");
-//     spiner()
+window.addEventListener('load',function(){
+    console.log("jjj");
+    spiner()
 
-// })
+})
 
 
 $(document).ready(function(){
@@ -54,3 +54,20 @@ $(window).scroll(function(){
 
   
 });
+
+$("#over").click(function(e){
+     e.preventDefault();
+     $("html , body").animate({scrollTop:$($("#Overview")).offset().top -180 },1000)
+     });
+$("#locate").click(function(e){
+    e.preventDefault();
+    $("html , body").animate({scrollTop: $($("#date")).offset().top -180 },1000) });
+
+function regstier(){
+    $(".Participant").click(function(e){
+        e.preventDefault();
+        $(this).parent().parent().parent().clone().appendTo( ".form1-branch" );
+
+    })
+}
+regstier();
