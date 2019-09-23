@@ -58,6 +58,7 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   opacity: .6;
+	transition: .6s;
 }
 .swiper-button-next:hover i , .swiper-button-prev:hover i{
   opacity: 1;

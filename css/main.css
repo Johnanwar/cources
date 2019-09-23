@@ -5,9 +5,7 @@
 		margin: 0;
 		-webkit-box-sizing: border-box;
 				box-sizing: border-box;
-		-webkit-transition: all 1s;
-		-o-transition: all 1s;
-		transition: all 1s;
+	
 	}
 	/* body{
 		overflow: hidden;
@@ -15,6 +13,7 @@
 	a{
 		color: #383749;
 		font-family: 'Roboto Condensed', sans-serif;
+	    transition: .6s;
 	}
 	p ,span{
 		font-family: 'Roboto Condensed', sans-serif;
@@ -31,7 +30,7 @@
 
 
 ::-webkit-scrollbar{
-	background-color: #00a2b1;
+	background-color: #174d85;
 	width: 8px;
 }
 ::-webkit-scrollbar-thumb{
@@ -210,14 +209,14 @@
 .big-nav {
  background-color: #fff;
  z-index: 999999999;
- height: 85px;
+ height: 100px;
 }
 .big-nav-fixed{
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	height: 85px;
+	height: 100px;
 	background-color: #fff;
     box-shadow: 2px 2px 2px #eee;
 }
@@ -225,13 +224,14 @@
 	width: 200px;
 	height: 70px;
 	width: 140px;
-    height: 85px;
+    height: 100px;
   }
 .big-nav-home .nav-item a{
   color:#00a2b1!important;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
+  transition: .6s;
 }
 .big-nav-home .course-link-hover a{
    font-family: Sans-serif	!important;
@@ -263,27 +263,30 @@
 .course-link-nav:hover .course-link-hover{
 opacity: 1;
 visibility: visible;
-top: 63px;
+top: 70px;
 }
 .course-link-hover{
 	position: absolute;
-	width: 460px;
-	right: -124px;
+	width: 600px;
+	right: -220px;
 	font-size: 14px;
 	padding: 5px;
-	top: 63px;
 	visibility: hidden;
 	opacity: 0;
-	top: 50px;
+	top: 110px;
 	text-transform: capitalize;
 	overflow: hidden;
-	/*transform: scale(0) ;
-	-webkit-transform: scale(1);
-
-	*/max-height: 60vh;
+	max-height: 60vh;
 	overflow-y: auto;
 	background-color: #fff;
 	box-shadow: 2px 2px 2px #eee, -2px 0 2px #eee;
+	transition: .6s;
+}
+.hea p{
+	transition: .6s;
+}
+.hea p:hover{
+	transform:translateX(10px);
 }
 .course-link-hover .hea h5{
  background-color: #00a2b1;
@@ -298,10 +301,7 @@ top: 63px;
 	/*font-size: 18px;
 	*/padding: 5px;
 	border-radius: 50%;
-	-webkit-border-radius:;
-	-moz-border-radius:;
-	-ms-border-radius:;
-	-o-border-radius:;
+	transition: .6s;
 }
 .course-link-hover .hea p:hover i{
 	transform: rotate(90deg);
@@ -519,6 +519,7 @@ top: 63px;
 	color: #fff;
 	background-color: #00a2b1;
 	width: 138px;
+	transition: .6s;
 }
 .home-content button:hover{
 	color: #00a2b1;
@@ -546,6 +547,7 @@ top: 63px;
 .header hr {
 	width: 6%;
 	border-bottom: 1px solid #00a2b1;
+	transition: .6s;
 }
 .header:hover hr {
 	width: 10%;
@@ -654,6 +656,7 @@ top: 63px;
 	right: 35%;
 	top: -70px;
 	height: 130px;
+	transition: .6s;
 }
 .card-none{
 	display: none;
@@ -670,13 +673,14 @@ top: 63px;
 	margin-left: 10px;
 	font-size: 18px;
     line-height: 1;
-    color: #383749;
+	color: #383749;
+	transition: .6s;	
 }
 .courses-links a:hover{
-	color: #00a2b1
+	color: #00a2b1;
 }
 .courses-container{
-	background-color: #f7f7f7
+	background-color: #f7f7f7;
 }
 .courses-container h5{
 	font-size: 42px;
@@ -691,6 +695,7 @@ top: 63px;
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 	overflow: hidden;
+	transition: .6s;
 }
 .course-content h4{
 	font-size: 18px;
@@ -706,6 +711,7 @@ top: 63px;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+	transition: .6s;
 }
 .course-content .course-teacher a{
 	font-style: italic;
@@ -739,6 +745,7 @@ top: 63px;
 .course-card img{
 	width: 100%;
 	height: 150px!important;
+	transition: .6s;
 }
 .corse-android{
 	position: relative;
@@ -807,6 +814,7 @@ top: 63px;
 .pics-container img{
 	opacity: .6;
 	height: 80px;
+	transition: .6s;
 }
 .pics-container img:hover{
 	opacity: 1;
@@ -845,7 +853,8 @@ top: 63px;
 .footer-form .btn{
 	background-color: #ffffff!important;
     color: #011d2f;
-    border: 1px solid #011d2f;
+	border: 1px solid #011d2f;
+	transition: .6s;	
 }
 .footer-form .btn:hover{
 	background-color: #fff!important;
@@ -866,7 +875,7 @@ top: 63px;
   -moz-border-radius:;
   -ms-border-radius:;
   -o-border-radius:;
-   */:;
+   */
 }
 .footer-contact i:hover{
 	transform: rotate(360deg);
@@ -889,6 +898,7 @@ top: 63px;
 }
 .last-section .social i{
 	font-size: 20px;
+	transition: .6s;
 	color: #ffff;
 	padding: 6px 6px;
 	/* background-color: #00a2b1; */
@@ -927,6 +937,7 @@ top: 63px;
 /* start scroll top */
 .sccroll-top i
 {
+	transition: .6s;
 	position: fixed;
 	bottom: 130px;
 	right: 25px;
@@ -1064,70 +1075,102 @@ top: 63px;
    }
 /* about paaaaaaaaaaaaaaaage */
 /* contact paaaaaaaaaaaaaaaage */
-.all-contact-page{
-	background: url(../images/dotted-map.jpg);
+.Contact{
+	background-image: url(../images/contact.jpg);
+	height: 60vh;
 	background-size: cover;
-	 height: 500px;
-}
-.all-contact-page .header  h3{
-	font-size: 45px;
-   }
-.all-contact-page .header  h3::after{
-	content: "C"!important;
-	color: #fff;
-   }
-/* 
-   .office-info{
-	   box-shadow: 1px 2px 2px  #ccc, -1px -2px 3px  #ccc;
-	   padding: 5px 15px;;
-	   border-radius: 10px;
-	   -webkit-border-radius: 10px;
-	   -moz-border-radius: 10px;
-	   -ms-border-radius: 10px;
-	   -o-border-radius: 10px;
-	   height: 100%;
-	   background-color: #eee
-} */
-/* .contact-page{
-	background: url(../images/m.jpg);
-	background-size: cover;
-	 background-attachment: fixed;
-	 color: #fff;
-} */
-.footer-form input:focus ,.footer-form textarea:focus ,.footer-form .btn:focus{
-	box-shadow: 1px 1px 2px #c0c1cd;
-}
-.footer-form input ,.footer-form textarea {
-	background-color: #fff;
-}
-.contact-page .footer-form .btn{
-	width: 40%;
-	margin-left: 30%!important;
-}
-.office-info h5{
-	font-size: 35px;
-	font-weight: bold;
-	color: #174d85;
-}
-.office-info hr{
-	background-color: #eee;
-	width: 10%;
-}
-.contact-page .footer-form .btn {
-	width: 30% ;
-    margin-left: 35%!important;
-	
+	background-attachment: fixed;
+	position: relative;
   }
-.office-info i{
-	color: #fff;
-	background-color: #00a2b1;
-	padding: 5px;
+  .contact-form{
+	box-shadow: 1px 1px 2px 4px #eee, -1px -1px 10px 10px #eee;
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+  }
+  .contact-form .form-control{
+	background: transparent none repeat scroll 0 0;
+	  border-color: #e7e7e7;
+	  border-image: none;
+	  border-style: none none solid;
+	  border-width: medium medium 1px;
+	  box-shadow: inherit;
+  }
+  #submit{
 	border-radius: 5px;
-	-webkit-border-radius:;
-	-moz-border-radius:;
-	-ms-border-radius:;
-	-o-border-radius:;
-}
+	font-size: 12px;
+	padding: 8px 35px;
+	background-color: #0571ba;
+	border: 1px solid #0571ba;
+	display: inline-block;
+	font-family: "Montserrat",sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 25px;
+	transition: .6s;
+	text-transform: uppercase;
+	color: #fff;
+  }
+  #submit:hover{
+	background-color: #fff;
+	color: #0571ba;
+  }
+  .contact-right li{
+	margin-bottom: 20px;
+	  font-family: "Montserrat",sans-serif;
+  }
+  .contact-right i{
+	color: #2154cf;
+	  font-size: 30px;
+  }
+  .contact-right .info {
+	padding:0  15px;
+	display: table-cell;
+	  vertical-align: middle;
+  }
+  .contact-right .icon {
+	background: #ffffff none repeat scroll 0 0;
+	border: 2px solid #e7e7e7;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	color: #232323;
+	height: 70px;
+	padding: 0;
+	text-align: center;
+	width: 70px;
+	display: table-cell;
+	  vertical-align: middle;
+  }
+  .contact-right .info p {
+	font-weight: 600;
+	margin: 0;
+	text-transform: uppercase;
+	color: #232323;
+  }
+  .contact-right .info span {
+	display: block;
+	font-weight: normal;
+	text-transform: capitalize;
+  }
+  .contact-home h4{
+	font-weight: 600;
+	position: relative;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+  }
+  .overlay-2{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+  }
 
 /* contact paaaaaaaaaaaaaaaage */
 /* staaaaaaaaart maaaaaaaaain course paaaaaaaage */
@@ -1179,6 +1222,7 @@ top: 63px;
 	padding: 10px 0 10px 10px;	
 }
 .category-left-side a{
+	transition: .6s;
 	display: block;
 	border-top: 1px solid #eee;
 	padding: 10px 0 10px 10px;
@@ -1339,6 +1383,9 @@ top: 63px;
     background-color: #ed7c0c;
     border: 1px solid #ed7c0c;
 	}
+	.Participant:focus{
+		box-shadow: unset;
+	}
 	.Participant:hover{
 		background-color: #fff;
 		color: #ed7c0c;
@@ -1479,5 +1526,8 @@ top: 63px;
 .cat-select-parent{
 	background-color: #fff;
 	padding: 15px;
+}
+.regstier-1 .nav-tabs {
+	width: 100%;
 }
   }

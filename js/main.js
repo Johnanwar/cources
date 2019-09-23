@@ -63,11 +63,58 @@ $("#locate").click(function(e){
     e.preventDefault();
     $("html , body").animate({scrollTop: $($("#date")).offset().top -180 },1000) });
 
+    // regstieeeeeeeeeer form 
 function regstier(){
-    $(".Participant").click(function(e){
+var form = document.querySelector("#pranchParent");
+var number = document.getElementById("partic-no");
+var x = 2
+    var branch = `
+    <div id="brnch-%id%" class="form1-branch row">
+    <div class="col-md-12 pt-3">
+     <p>Participant <span id="partic-no"> %num% </span> </p>
+    </div>
+    <div class="col-md-4 my-2">
+        <input type="text" class="form-control" placeholder="First Name*">
+</div>
+<div class="col-md-4 my-2">
+    <input type="text" class="form-control" placeholder="Last Name*">
+</div>
+<div class="col-md-4 my-2">
+<input type="text" class="form-control" placeholder="Job Title*">
+</div>
+<div class="col-md-4 my-2">
+<input type="email" class="form-control" placeholder="Email*">
+</div>
+ </div>
+`
+    $(".Participant-add").click(function(e){
         e.preventDefault();
-        $(this).parent().parent().parent().clone().appendTo( ".form1-branch" );
-
+        // $(this).parent().parent().parent().clone().appendTo( ".form1-branch" );
+        newFom = branch.replace('%id%', x);
+        newFom2 = newFom.replace('%num%', x);
+        x++;
+        form.insertAdjacentHTML('beforeend', newFom2);
+        $(".remove-partice").fadeIn();
+        xButton();
     })
+
+    $(".remove-partice").click(function(e){
+        e.preventDefault();
+        x--;
+        var branchId= "brnch-"+ x ;
+        var newbrabchId = "#" + branchId
+        var formselect = document.querySelector("" + newbrabchId)
+        console.log(branchId);
+      $(formselect).remove();
+      xButton();
+    })
+ function xButton(){
+    if(x <3){
+        $(".remove-partice").fadeOut();
+    }else{
+        $(".remove-partice").fadeIn();
+    }
+ }
+ 
 }
 regstier();
