@@ -208,7 +208,7 @@
 .big-nav {
  background-color: #fff;
  z-index: 999999999;
- height: 100px;
+ height: 85px;
 }
 .big-nav-fixed{
 	position: fixed;
@@ -223,7 +223,7 @@
 	width: 200px;
 	height: 70px;
 	width: 140px;
-    height: 100px;
+    height: 85px;
   }
 .big-nav-home .nav-item a{
   color:#00a2b1!important;
@@ -231,6 +231,10 @@
   cursor: pointer;
   font-weight: bold;
   transition: .6s;
+  -webkit-transition:;
+  -moz-transition:;
+  -ms-transition:;
+  -o-transition:;
 }
 .big-nav-home .course-link-hover a{
    font-family: Sans-serif	!important;
